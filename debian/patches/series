@@ -1,2 +1,4 @@
 disable-online-tests.patch
-enable-repro-builds.patch
+fix-unit-tests.patch
+handle-bashism.patch
+disable-flaky-stat-tests.patch
