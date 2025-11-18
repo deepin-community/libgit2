@@ -1,3 +1,9 @@
+libgit2 (1.7.2+ds-1deepin0) unstable; urgency=medium
+
+  * No source change upload against mbedtls 2.28.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Tue, 18 Nov 2025 16:42:13 +0800
+
 libgit2 (1.7.2+ds-1) unstable; urgency=medium
 
   * New upstream version 1.7.2+ds
