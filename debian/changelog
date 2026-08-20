@@ -1,8 +1,86 @@
-libgit2 (1.7.2+ds-1deepin0) unstable; urgency=medium
+libgit2 (1.9.0+ds-2) unstable; urgency=medium
 
-  * No source change upload against mbedtls 2.28.
+  * Upload to unstable.
+  * Bump Standards-Version to 4.7.2
+  * Replace old FSF address by weblink in d/copyright
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Tue, 18 Nov 2025 16:42:13 +0800
+ -- Timo Röhling <roehling@debian.org>  Thu, 03 Apr 2025 17:28:22 +0200
+
+libgit2 (1.9.0+ds-1) experimental; urgency=medium
+
+  * New upstream version 1.9.0+ds
+    (Closes: #1092215)
+  * Drop Debian patch for mbedTLS default cipher list (fixed upstream)
+  * Wrap and sort Debian package files
+  * Bump SONAME to 1.9
+  * Install new CMake config
+  * Update d/copyright
+
+ -- Timo Röhling <roehling@debian.org>  Sun, 12 Jan 2025 00:39:53 +0100
+
+libgit2 (1.8.4+ds-3) unstable; urgency=medium
+
+  * Use mbedTLS default cipher list for TLS handshake (Closes: #1088281)
+
+ -- Timo Röhling <roehling@debian.org>  Wed, 27 Nov 2024 23:26:26 +0100
+
+libgit2 (1.8.4+ds-2) unstable; urgency=medium
+
+  * Bump cmake_minimum_required() for autopkgtest (Closes: #1087860)
+
+ -- Timo Röhling <roehling@debian.org>  Thu, 21 Nov 2024 11:46:53 +0100
+
+libgit2 (1.8.4+ds-1) unstable; urgency=medium
+
+  * Unvendor llhttp again
+  * New upstream version 1.8.4+ds
+  * Print the file header on GIT_DIFF_FORMAT_PATCH_HEADER (Closes: #1086494)
+  * Move back to http-parser again
+
+ -- Timo Röhling <roehling@debian.org>  Sun, 03 Nov 2024 01:47:58 +0100
+
+libgit2 (1.8.2~rc1+ds2-1) unstable; urgency=medium
+
+  * Keep vendored llhttp for ports architectures
+  * New upstream version 1.8.2~rc1+ds2
+  * Update d/copyright
+  * Use vendored llhttp on architectures without nodejs (Closes: #1084223)
+
+ -- Timo Röhling <roehling@debian.org>  Tue, 08 Oct 2024 22:45:48 +0200
+
+libgit2 (1.8.2~rc1+ds-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Timo Röhling <roehling@debian.org>  Sat, 05 Oct 2024 01:02:23 +0200
+
+libgit2 (1.8.2~rc1+ds-1) experimental; urgency=medium
+
+  * New upstream version 1.8.2~rc1+ds
+    - Revert premature const correctness change to
+      git_commit_create() and git_commit_create_buffer()
+
+ -- Timo Röhling <roehling@debian.org>  Sun, 15 Sep 2024 09:52:48 +0200
+
+libgit2 (1.8.1+ds-2) experimental; urgency=medium
+
+  * Fix version ordering for -rc releases in d/watch
+  * Wrap and sort Debian package files
+  * Bump Standards-Version to 4.7.0
+  * Move back to http-parser from llhttp (Closes: #1081534)
+
+ -- Timo Röhling <roehling@debian.org>  Thu, 12 Sep 2024 16:04:48 +0200
+
+libgit2 (1.8.1+ds-1) experimental; urgency=medium
+
+  * Update Files-Excluded for newly vendored HTTP parser
+  * New upstream version 1.8.1+ds
+  * Update patches
+    - Drop handle-bashim.patch (merged upstream)
+  * Bump SONAME to 1.8
+  * Migrate from http-parser to llhttp
+
+ -- Timo Röhling <roehling@debian.org>  Mon, 20 May 2024 11:21:07 +0200
 
 libgit2 (1.7.2+ds-1) unstable; urgency=medium
 
